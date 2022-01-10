@@ -420,12 +420,13 @@ aside{
 .view-items{
     width: 280px;
     height: 233px;
-    margin: 0 38px 38px 0;
-    border-radius: 8%;
+    outline: 2px solid #0000001a;
+    margin-bottom: 30px;
+    border-radius: 5%;
+    position: relative;
+    
 }
-.view-items:nth-child(4n){
-    margin-right: 0;
-}
+
 .view-items:nth-child(2n){
     background-image: url('https://picsum.photos/id/11/280/233');
     background-repeat: no-repeat;
@@ -440,4 +441,27 @@ aside{
     background-image: url('https://picsum.photos/id/13/280/233');
     background-repeat: no-repeat;
     background-size: cover;
+}
+.items-title{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 56px;
+    background-color: #fff;
+    border-bottom-left-radius:  11px;
+    border-bottom-right-radius: 11px;
+    padding: 10px 12px;
+    
+}
+.title-text{
+    margin-left: 12px;
+}
+.text-h4{
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 13px;
+}
+.text-parag{
+    font-size: 11px;
+    color: #b3b3b3;
 }
