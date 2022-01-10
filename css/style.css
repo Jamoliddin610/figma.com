@@ -3,7 +3,6 @@ body{
         font-family: 'Inter',
         sans-serif;
         font-weight: 400;
-        padding-right: 5px;
 
 }
 .page-head{
@@ -144,6 +143,7 @@ aside{
     border-right: solid 1px #e5e5e5;
     padding-top: 10px;
     z-index: 5000;
+    background-color: #fff;
     
 }
 .recent{
@@ -305,7 +305,7 @@ aside{
     padding-left: 16px;
 }
 .news-title{
-    box-shadow: 0 1px #e5e5e5;
+    
     padding-right: 20px;
     padding-left: 38px;
     width: 100%;
@@ -317,6 +317,7 @@ aside{
     font-size: 13px;
     z-index: 1000;
     background-color: #fff;
+    border-bottom: solid 1px #e5e5e5;
 }
 .new-file-creation{
     height: 120px;
@@ -379,22 +380,33 @@ aside{
     position: fixed;
     bottom: 25px;
     right: 25px;
+    z-index: 100;
 }
 .view-container{
     position: absolute;
     left: 225px;
     padding-top: 185px;
-    width: 100%;
     z-index: 1;
 }
 .view-bar-container{
     height: 24px;
     margin-bottom: 16px;
-    padding: 0 38px;
+    padding: 0 15px  0 38px;
+    width: 100%;
+    
 }
-.first-toggle-svg{
-    fill: #18a0fb;
-    box-shadow: inset 0 0 0 1px #18a0fb;
+.toggle-svg-container{
+     box-shadow: inset 0 0 0 1px #18a0fb; 
+    padding: 3px 6px;
+    border-radius: 10%;
+}
+.btn-svg-container{
+    padding: 3px 6px;
+    margin: 4px;
+    box-shadow: inset 0 0 0 1px #e6e6e6;
+}
+.btn-svg-container:hover{
+    background-color:#e6e6e6;
 }
 .last-w-parag{
     font-size: 11px;
@@ -403,13 +415,29 @@ aside{
 }
 .views-lists{
     list-style: none;
+    padding-top: 10px;
 }
 .view-items{
-    width: 288px;
+    width: 280px;
     height: 233px;
-    background-image: url("https://www.shutterstock.com/ru/image-photo/nature-foto-view-beautiful-life-1950711865");
-    background-size: cover;
-    border: solid 1px black;
     margin: 0 38px 38px 0;
-    border-radius: 10%;
+    border-radius: 8%;
+}
+.view-items:nth-child(4n){
+    margin-right: 0;
+}
+.view-items:nth-child(2n){
+    background-image: url('https://picsum.photos/id/11/280/233');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.view-items:nth-child(2n+1) {
+    background-image: url('https://picsum.photos/id/12/280/233');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.view-items:nth-child(3n) {
+    background-image: url('https://picsum.photos/id/13/280/233');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
